@@ -103,10 +103,10 @@ def get_pairs(split):
         if mask_path.exists():
             pairs.append((str(image_path), str(mask_path)))
 
-    print(f"{split}: {len(pairs)} image-mask pairs")
+    print(f"{split}: {len(pairs)} pares de imágen-máscara")
 
     if not pairs:
-        raise ValueError(f"No image-mask pairs found for {split}")
+        raise ValueError(f"No se encontró par para {split}")
 
     return pairs
 
